@@ -9,13 +9,13 @@ function App() {
       <div className="m-4">
       <Jumbotron>
         <Container>
-          <h1>StoryPlay</h1>
+          <h1>fidenso - flights</h1>
           <p>
-            Learn about careers while playing
+            Offset your emissions from flying
           </p>
         </Container>
       </Jumbotron>
-      <Button variant="info" size="lg" block className=''>START</Button>
+      <Button variant="info" size="lg" block className=''>OFFSET</Button>
       </div>
     </div>
   );

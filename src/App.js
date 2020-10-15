@@ -5,8 +5,11 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from './fidensoLogo.png'
-import Table from 'react-bootstrap/Table'
-import TableRow from './TableRow'
+import Table from 'react-bootstrap/Table';
+import TableRow from './TableRow';
+import Form from "react-bootstrap/Form";
+import Col from "react-bootstrap/Col";
+
 // import Nav from 'react-bootstrap/Nav'
 function App() {
   return (
@@ -37,12 +40,41 @@ function App() {
           </p>
         </Container>
       </Jumbotron>
+      <Form>
+        <Form.Row className="align-items-center">
+          <Col>
+            <Form.Label>To</Form.Label>
+            <Form.Control size="lg" as="select">
+              <option>AMD</option>
+              <option>ORD</option>
+              <option>SAN</option>
+              <option>DWI</option>
+              <option>DTF</option>
+            </Form.Control>
+          </Col>
+          <Col>
+            <Form.Label>From</Form.Label>
+            <Form.Control size="lg" as="select">
+              <option>AMD</option>
+              <option>ORD</option>
+              <option>SAN</option>
+              <option>DWI</option>
+              <option>DTF</option>
+            </Form.Control>
+          </Col>
+        </Form.Row>
+        <Form.Row>
+          <Col>
+            <Button type="submit" variant="secondary" block>Submit</Button>
+          </Col>
+        </Form.Row>
+      </Form>
       <Table striped bordered hover>
         <thead>
           <tr>
             <th>To</th>
             <th>From</th>
-            <th>Carbon</th>
+            <th>Carbon (kg)</th>
             <th>Offset</th>
           </tr>
         </thead>
@@ -52,7 +84,7 @@ function App() {
           <TableRow id="3" to="ONT" from="STL" carbon="259"/>
         </tbody>
       </Table>
-      <Button variant="success" size="lg" block className=''>OFFSET ALL FLIGHTS</Button>
+      <Button variant="success" size="lg" block className=''>✓ OFFSET ALL FLIGHTS</Button>
       </div>
     </div>
   );

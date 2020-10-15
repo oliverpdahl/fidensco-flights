@@ -33,7 +33,7 @@ function App() {
         <Container>
           <h1>fidenso//flights</h1>
           <p>
-            Offset your emissions from flying
+            Offset your institutions emissions from flying
           </p>
         </Container>
       </Jumbotron>

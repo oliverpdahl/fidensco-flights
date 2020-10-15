@@ -32,9 +32,9 @@ function App() {
         </Navbar.Collapse> */}
       </Navbar>
       <div className="m-4">
-      <Jumbotron>
+      <Jumbotron className="text-center">
         <Container>
-          <h1 className="display-3">fidenso//flights</h1>
+          <h1>fidenso//flights</h1>
           <p><em>
             Offset your institution's emissions from flying
           </em></p>

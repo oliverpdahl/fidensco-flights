@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from './fidensoLogo.png'
+import Table from 'react-bootstrap/Table'
+import TableRow from './TableRow'
 // import Nav from 'react-bootstrap/Nav'
 function App() {
   return (
@@ -29,13 +31,28 @@ function App() {
       <div className="m-4">
       <Jumbotron>
         <Container>
-          <h1>fidenso - flights</h1>
+          <h1>fidenso//flights</h1>
           <p>
             Offset your emissions from flying
           </p>
         </Container>
       </Jumbotron>
-      <Button variant="info" size="lg" block className=''>OFFSET</Button>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>To</th>
+            <th>From</th>
+            <th>Carbon</th>
+            <th>Offset</th>
+          </tr>
+        </thead>
+        <tbody>
+          <TableRow id="1" to="LAX" from="MNL" carbon="1248"/>
+          <TableRow id="2" to="DCA" from="EDI" carbon="519"/>
+          <TableRow id="3" to="ONT" from="STL" carbon="259"/>
+        </tbody>
+      </Table>
+      <Button variant="success" size="lg" block className=''>OFFSET ALL FLIGHTS</Button>
       </div>
     </div>
   );

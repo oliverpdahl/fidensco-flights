@@ -9,7 +9,7 @@ class TableRow extends React.Component
     <td>{this.props.to}</td>
     <td>{this.props.from}</td>
     <td>{this.props.carbon}</td>
-    <td><Button variant="success">Offset Flight</Button></td>
+    <td><Button variant="success" block>Offset Flight</Button></td>
   </tr>)
   }
 } 

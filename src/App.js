@@ -34,10 +34,10 @@ function App() {
       <div className="m-4">
       <Jumbotron>
         <Container>
-          <h1>fidenso//flights</h1>
-          <p>
-            Offset your institutions emissions from flying
-          </p>
+          <h1 className="display-3">fidenso//flights</h1>
+          <p><em>
+            Offset your institution's emissions from flying
+          </em></p>
         </Container>
       </Jumbotron>
       <Form>

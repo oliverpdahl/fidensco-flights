@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from './fidensoLogo.png'
+// import Nav from 'react-bootstrap/Nav'
 function App() {
   return (
     <div className="text-center" style={{height:1000}}>
@@ -17,6 +18,13 @@ function App() {
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+          </Nav>
+        </Navbar.Collapse> */}
       </Navbar>
       <div className="m-4">
       <Jumbotron>
